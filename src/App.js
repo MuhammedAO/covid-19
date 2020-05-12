@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './App.module.css';
 import {Cards, CountryPicker, Chart} from './components'
 import coronaImg from './images/image.png'
+import {  Typography } from '@material-ui/core'
 
 import {fetchData} from './api'
 
@@ -34,6 +35,7 @@ class App extends React.Component{
         <Cards data={data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Chart data={data} country={country}/>
+        <Typography color="textSecondary" gutterBottom>Muhammed Ogunsanya &copy;2020</Typography>
       </div>
     );
   }
