@@ -35,7 +35,6 @@ class App extends React.Component{
         <Cards data={data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
         <Chart data={data} country={country}/>
-        <Typography color="textSecondary" gutterBottom>Muhammed Ogunsanya &copy;2020</Typography>
       </div>
     );
   }
